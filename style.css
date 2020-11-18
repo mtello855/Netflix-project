@@ -1,0 +1,54 @@
+#miSection {
+  padding-bottom: 482px;
+}
+/* contenedor principal y flechas  */
+
+.peliculas-recomendadas .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.9); /*color del boton*/
+  font-size: 40px;
+  height: 50%; /*altura del 50% del contenedor */
+  line-height: 40px;
+  width: 50px;
+  color: rgb(248, 237, 237); /*color de la flecha*/
+  cursor: pointer;
+  z-index: 500; /*para que la flecha quede arriba de los elementos */
+  transition: 0.2s ease all;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+  left: 0; /*posicion de la flecha */
+}
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+  right: 0; /*posicion de la flecha */
+}
+
+/* carousel */
+.peliculas-recomendadas .contenedor-carousel {
+  width: 100%; /*este contenedor abarca el 100%del espacio disponible*/
+  padding: 20px 0; /*para generar un espacio con el titulo */
+  overflow: hidden; /*ocultar las imagenes fuera del contenedor*/
+}
+.peliculas-recomendadas .contenedor-carousel .carousel {
+  display: flex;
+  flex-wrap: nowrap; /*imagenes una al lado de la otra */
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+  min-width: 20%;
+  transition: 0.3s ease all;
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+  width: 100%;
+  vertical-align: top; /*para sacar un margen que agregan los navegadores */
+}
