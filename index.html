@@ -2,197 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- link de bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./profiles.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link href="./style.css" rel="stylesheet" />
-    <!-- link de iconos -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-    />
     <title>Document</title>
   </head>
+
   <body>
-    <div class="conteiner bg-secondary">
-      <div class="row">
-        <div class="col-12 bg-success py-4">
-          barra de navegacion
-        </div>
+    <div>
+      <div id="main-bar">
+        <a href="./principal.html"
+          ><img id="logo" src="./Netflix-Nuevo-Logo.jpg"
+        /></a>
       </div>
-
-      <div class="row">
-        <div class="col-12 text-white bg-dark" id="miSection">
-          <p>Imagen principal</p>
-          <h1>titulo</h1>
-          <p>texto informativo</p>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-5">
-            boton
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-5">
-            boton
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="peliculas-recomendadas text-white bg-secondary">
-      <div class="titulo">
-        <h5>genero</h5>
-      </div>
-
-      <div class="contenedor-principal">
-        <button role="button" id="flecha-izquierda" class="flecha-izquierda">
-          <i class="fas fa-angle-left"></i>
-        </button>
-
-        <div class="contenedor-carousel">
-          <div class="carousel">
-            <div class="pelicula">
-              <a href="#"><img src="img/1.png" /></a>
+      <div id="profiles">
+        <h1 class="profile">¿Quién está viendo ahora?</h1>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-4">
+              <a href="./principal.html"
+                ><img
+                  class="img-profile"
+                  src="./img/0d6ab257cdc929ca129ba5557b125a68.png"
+              /></a>
             </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/2.png" /></a>
+            <div class="col-4">
+              <a href="./principal.html"
+                ><img
+                  class="img-profile"
+                  src="./img/flat,1000x1000,075,f.u2.jpg"
+              /></a>
             </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/3.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/4.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/5.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/6.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/7.png" /></a>
+            <div class="col-4">
+              <a href="./principal.html"
+                ><img
+                  class="img-profile"
+                  src="./img/c08e6c9595e03202a46a95f66578799f.png"
+              /></a>
             </div>
           </div>
         </div>
-        <button role="button" id="flecha-derecha" class="flecha-derecha">
-          <i class="fas fa-angle-right"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="peliculas-recomendadas text-white bg-secondary">
-      <div class="titulo">
-        <h5>genero</h5>
-      </div>
-
-      <div class="contenedor-principal">
-        <button role="button" id="flecha-izquierda" class="flecha-izquierda">
-          <i class="fas fa-angle-left"></i>
-        </button>
-
-        <div class="contenedor-carousel">
-          <div class="carousel">
-            <div class="pelicula">
-              <a href="#"><img src="img/1.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/2.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/3.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/4.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/5.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/6.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/7.png" /></a>
-            </div>
-          </div>
+        <div id="btn-adm">
+          <button id="btnADM">ADMINISTRAR PERFILES</button>
         </div>
-        <button role="button" id="flecha-derecha" class="flecha-derecha">
-          <i class="fas fa-angle-right"></i>
-        </button>
       </div>
     </div>
-
-    <div class="peliculas-recomendadas text-white bg-secondary">
-      <div class="titulo bg-secondary">
-        <h5>genero</h5>
-      </div>
-
-      <div class="contenedor-principal">
-        <button role="button" id="flecha-izquierda" class="flecha-izquierda">
-          <i class="fas fa-angle-left"></i>
-        </button>
-
-        <div class="contenedor-carousel">
-          <div class="carousel">
-            <div class="pelicula">
-              <a href="#"><img src="img/1.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/2.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/3.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/4.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/5.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/6.png" /></a>
-            </div>
-            <div class="pelicula">
-              <a href="#"><img src="img/7.png" /></a>
-            </div>
-          </div>
-        </div>
-        <button role="button" id="flecha-derecha" class="flecha-derecha">
-          <i class="fas fa-angle-right"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"
-    ></script>
-
     <script src="./app.js"></script>
-
-    <!-- script de iconos  -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
-      integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

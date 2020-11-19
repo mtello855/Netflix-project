@@ -1,0 +1,31 @@
+#logo {
+  width: 13%;
+}
+#main-bar {
+  background-color: black;
+}
+#profiles {
+  background-color: #2a2a29;
+  height: 589px;
+}
+.profile {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+.img-profile {
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 10%;
+}
+#btn-adm {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+#btnADM {
+  color: white;
+  background-color: #2a2a29;
+  border-color: white;
+}
