@@ -1,5 +1,68 @@
-#miSection {
-  padding-bottom: 482px;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap");
+
+body {
+  overflow-x: hidden; /* oculto la barra horizontal*/
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+}
+
+.contenido #buttonplay {
+  font-family: "Mukta", sans-serif;
+  background: rgb(67 225 47 / 100%);
+  border: none;
+  border-radius: 3px;
+
+  color: #100101;
+
+  padding: 5px 35px 5px;
+  font-size: 17px;
+}
+
+.contenido #buttonplay:hover {
+  background: rgb(221, 220, 220);
+  color: #000;
+}
+.contenido #buttoninfo {
+  font-family: "Mukta", sans-serif;
+  background: rgb(151 118 118 / 37%);
+  border: none;
+  border-radius: 3px;
+
+  color: #f3ecec;
+  margin-right: 13px;
+  margin-left: 23px;
+  padding: 5px 35px 5px;
+  font-size: 17px;
+}
+
+.contenido #buttoninfo:hover {
+  background: rgb(129, 121, 121);
+  color: #f3ecec;
+}
+
+.contenido #iconoreproducir {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.contenido #iconoinfo {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#mainsection {
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url(img/imagenprincipal.jpg) no-repeat center center;
+  background-size: cover; /*abarca todo el bloque y lo hace responsivo*/
+  height: 569px;
+}
+
+.contenido {
+  text-align: left;
+  margin: 200px 90px 20px;
 }
 /* contenedor principal y flechas  */
 
