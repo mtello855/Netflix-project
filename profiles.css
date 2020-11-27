@@ -1,3 +1,7 @@
+@font-face {
+  font-family: circular;
+  src: url(./Circulars.otf);
+}
 #logo {
   width: 13%;
 }
@@ -9,6 +13,7 @@
   height: 589px;
 }
 .profile {
+  font-family: circular;
   color: white;
   display: flex;
   justify-content: center;
