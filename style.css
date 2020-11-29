@@ -5,12 +5,22 @@ body {
   overflow-x: hidden; /* oculto la barra horizontal*/
 }
 
+#tittle {
+  position: relative;
+  z-index: 1;
+  margin: 200px 70px 0px;
+}
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 70px;
 }
+#description {
+  position: relative;
+  z-index: 1;
+  margin: 2px 70px 0px;
+}
 
-.contenido #buttonplay {
+#buttonplay {
   font-family: "Mukta", sans-serif;
   background: rgb(67 225 47 / 100%);
   border: none;
@@ -20,35 +30,32 @@ h1 {
 
   padding: 5px 35px 5px;
   font-size: 17px;
+  margin-left: 70px;
 }
-
-.contenido #buttonplay:hover {
+#buttonplay:hover {
   background: rgb(221, 220, 220);
   color: #000;
 }
-.contenido #buttoninfo {
+#buttoninfo {
   font-family: "Mukta", sans-serif;
   background: rgb(151 118 118 / 37%);
   border: none;
   border-radius: 3px;
 
   color: #f3ecec;
-  margin-right: 13px;
-  margin-left: 23px;
+
   padding: 5px 35px 5px;
   font-size: 17px;
 }
-
-.contenido #buttoninfo:hover {
+#buttoninfo:hover {
   background: rgb(129, 121, 121);
   color: #f3ecec;
 }
-
-.contenido #iconoreproducir {
+#iconoreproducir {
   margin-right: 10px;
   font-size: 20px;
 }
-.contenido #iconoinfo {
+#iconoinfo {
   margin-right: 10px;
   font-size: 20px;
 }
@@ -57,7 +64,7 @@ h1 {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%),
     url(img/imagenprincipal.jpg) no-repeat center center;
   background-size: cover; /*abarca todo el bloque y lo hace responsivo*/
-  height: 569px;
+  height: 629px;
 }
 
 .contenido {
@@ -114,4 +121,163 @@ h1 {
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
   width: 100%;
   vertical-align: top; /*para sacar un margen que agregan los navegadores */
+}
+
+/*------------------@media---------------------------------------------------------------------------*/
+
+/* Extra small devices (portrait phones, less than 576px) con barra*/
+@media (max-width: 575.98px) {
+  body {
+    overflow-x: hidden; /* oculto la barra horizontal*/
+  }
+  #description {
+    visibility: hidden;
+  }
+  h1 {
+    font-size: 45px;
+    margin-left: -26px;
+  }
+
+  #mainsection {
+    height: 429px;
+  }
+  #buttonplayxs {
+    font-family: "Mukta", sans-serif;
+    background: rgb(67 225 47 / 100%);
+    border: none;
+    border-radius: 3px;
+    color: #100101;
+    padding: 5px 35px 5px;
+    font-size: 19px;
+    margin-left: 70px;
+  }
+  #buttoninfoxs {
+    font-family: "Mukta", sans-serif;
+    background: rgb(67 225 47 / 100%);
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    padding: 5px 35px 5px;
+    font-size: 19px;
+    padding: 3px;
+    margin-top: 0px;
+    margin-left: 44px;
+  }
+  #buttoninfo:hover {
+    background: rgb(129, 121, 121);
+    color: #f3ecec;
+  }
+  #iconoinfoxs {
+    margin-right: -24px;
+  }
+
+  #horizontalbar {
+    margin-top: -23px;
+    background: rgb(67 225 47 / 100%);
+  }
+
+  #mas {
+    visibility: hidden;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up) con barra */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    overflow-x: hidden; /* oculto la barra horizontal*/
+  }
+  h1 {
+    font-size: 50px;
+    margin-left: -6px;
+  }
+  #horizontalbar {
+    margin-top: -52px;
+    margin-bottom: 40px;
+    background: rgb(67 225 47 / 100%);
+  }
+
+  #description {
+    visibility: hidden;
+  }
+
+  #mainsection {
+    background-size: cover;
+    height: 384px;
+  }
+
+  #buttonplayxs {
+    font-family: "Mukta", sans-serif;
+    background: rgb(67 225 47 / 100%);
+    border: none;
+    border-radius: 3px;
+    color: #100101;
+    padding: 5px 35px 5px;
+    font-size: 19px;
+    margin-left: 160px;
+  }
+  #buttoninfoxs {
+    font-family: "Mukta", sans-serif;
+    background: rgb(67 225 47 / 100%);
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    padding: 5px 35px 5px;
+    font-size: 19px;
+    padding: 3px;
+    margin-top: 0px;
+    margin-left: 44px;
+  }
+  #iconoinfoxs {
+    margin-right: -24px;
+  }
+
+  #mas {
+    visibility: hidden;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    overflow-x: hidden; /* oculto la barra horizontal*/
+  }
+  h1 {
+    font-size: 50px;
+    margin-left: -6px;
+  }
+  #description {
+    font-size: 15px;
+  }
+  #buttonplay {
+    margin-top: 5px;
+    margin-left: 63px;
+    padding: 5px;
+  }
+  #buttonplay:hover {
+    background: rgb(221, 220, 220);
+    color: #000;
+  }
+  #buttoninfo {
+    margin-top: 4px;
+    margin-left: -33px;
+    padding: 6px;
+  }
+
+  #mainsection {
+    height: 500px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #mainsection {
+    height: 700px;
+  }
+  #description {
+    font-size: 20px;
+  }
 }
