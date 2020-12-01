@@ -281,3 +281,7 @@ h1 {
     font-size: 20px;
   }
 }
+
+.dark {
+  filter: grayscale(1) contrast(10);
+}
